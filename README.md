@@ -1,6 +1,6 @@
 # HCSpasswordgroup
 
-Repository for 2015 Group Assessed Exercise for University of Glasgow Masters Level course Human-Centred Security.
+Repository for 2015 Group Assessed Exercise for University of Glasgow course [Human-Centred Security](http://moodle2.gla.ac.uk/course/view.php?id=968).
 
 ## Overview
 
