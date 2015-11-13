@@ -8,4 +8,7 @@ The second assessed research exercise for Human Centred Security M is a **proact
 
 Teams are expected to submit a body of work, either technical or non-technical, and a presentation. The presentation should be a video recording lasting 10-minutes (example structure: 3-minutes overview of the password meter, 2-minutes outlining an envisaged evaluation and a 5-minute reflection on the challenges in guiding minors to create effective authentication secrets).
 
-The aim of the exercise is not technical brilliance but **communication**. Communication in terms of (1) guiding minors to create effective authentication secrets and (2) presenting and justifying design motivation and decisions using relevant evidence from literature. 
+The aim of the exercise is not technical brilliance but **communication**. Communication in terms of
+
+1. guiding minors to create effective authentication secrets and
+2. presenting and justifying design motivation and decisions using relevant evidence from literature. 
