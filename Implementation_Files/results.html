@@ -1,15 +1,75 @@
-<div class="container">
+<!DOCTYPE html>
+<html lang="en">
 
-    <h1>Your password strength results</h1>
-    <p>Look how cool the radar graph is. Click on the different attributes to take a quiz/learn more about them!</p>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!-- Icon -->
+	<!-- <link rel="icon" href="../../favicon.ico">-->
 
-    <img src="http://jpgraph.net/download/manuals/chunkhtml/images/fixscale_radarex1.png" />
-    <p>Tool-tip type explanation of each of the four things.</p>
-    <p>Also need to include on the graph links to each of the following:</p>
-    <ul>
-        <li><a href="observability_quiz.html">Observability Quiz</a></li>
-        <li><a href="guessability_quiz.html">Guessability Quiz</a></li>
-        <li><a href="recordability_quiz.html">Recordability Quiz</a></li>
-        <li><a href="memorability_quiz.html">Memorability Quiz</a></li>
-    </ul>
-</div>
+	<title>Password Strength Meter</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<link href="bootstrap/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="navbar.css" rel="stylesheet">
+
+	<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+	<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+	<script src="bootstrap/js/ie-emulation-modes-warning.js"></script>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="jumbotron">
+
+			<h1 class="text-center">Your password strength results</h1>
+			<p>Look how cool the radar graph is. Click on the different attributes to take a quiz/learn more about them!</p>
+			<hr>
+			<div class="text-center">
+				<img src="http://jpgraph.net/download/manuals/chunkhtml/images/fixscale_radarex1.png" />
+			</div>
+			<br>
+			<p>Tool-tip type explanation of each of the four things.</p>
+			<p>Also need to include on the graph links to each of the following:</p>
+
+			<hr>
+
+			<div class="row text-center">
+				<div class="col-sm-3"><a class="btn btn-lg btn-success" href="observability_quiz.html">Observability Quiz</a></div>
+				<div class="col-sm-3"><a class="btn btn-lg btn-success" href="guessability_quiz.html">Guessability Quiz</a></div>
+				<div class="col-sm-3"><a class="btn btn-lg btn-success" href="recordability_quiz.html">Recordability Quiz</a></div>
+				<div class="col-sm-3"><a class="btn btn-lg btn-success" href="memorability_quiz.html">Memorability Quiz</a></div>
+			</div>
+
+		</div>
+		<!-- /container -->
+
+		<!-- Bootstrap core JavaScript
+    ================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script>
+			window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+		</script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+		<script src="bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+
+</html>
