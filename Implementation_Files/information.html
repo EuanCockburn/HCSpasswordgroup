@@ -47,10 +47,10 @@
 			<p style="text-indent:5em"><a href="#Identification">1.1.</a> Identification</p>
 			<p style="text-indent:5em"><a href="#Authentication2">1.2.</a> Authentication</p>
 			<p style="text-indent:5em"><a href="#Authorisation">1.3.</a> Authorisation</p>
-			<p><a>2.</a> Methods of authentication</p>
-			<p style="text-indent:5em"><a>2.1.</a> Text based passwords</p>
-			<p style="text-indent:5em"><a>2.2.</a> Biometrics</p>
-			<p style="text-indent:10em"><a>2.2.1.</a> Eye scan</p>		<p style="text-indent:10em"><a>2.2.2.</a> Finger print scan</p>	<p style="text-indent:10em"><a>2.2.3.</a> Face recognition</p>	<p style="text-indent:10em"><a>2.2.4.</a> Voice recognition</p>
+			<p><a href="#MethOfAuth">2.</a> Methods of authentication</p>
+			<p style="text-indent:5em"><a href="#TxtBased">2.1.</a> Text based passwords</p>
+			<p style="text-indent:5em"><a href="#Biomet">2.2.</a> Biometrics</p>
+			<p style="text-indent:10em"><a href="#Iscan">2.2.1.</a> Eye scan</p>		<p style="text-indent:10em"><a href="#FingPriSc">2.2.2.</a> Finger print scan</p>	<p style="text-indent:10em"><a href="#FaceReg">2.2.3.</a> Face recognition</p>	<p style="text-indent:10em"><a href="#VoiceReg">2.2.4.</a> Voice recognition</p>
 			<p style="text-indent:5em"><a>2.3.</a> Image based</p>
 			<p style="text-indent:10em"><a>2.3.1.</a> Image selection</p>	<p style="text-indent:10em"><a>2.3.2.</a> Point selection</p>	
 			<p style="text-indent:5em"><a>2.4.</a> Pattern based</p>
@@ -87,7 +87,43 @@ Validation on computer systems is most commonly characterised by password entry 
 	<h3 id="Authorisation"><u><b> Authorisation</b></u></h3>
 	<div class="well">
 		<p> <a href="Glossary.html#Authorisation" target="Glossary">Authorisation</a> is the stage of deciding what you can access after you have claimed and proven your identity. This could be after you have given your I.D. to a security guard and he has verified it. The authorsation stage would be deciding which areas of a building you can or cannot access.</br> On a computer system this translates to files and folders that you can or cannot access. Authorisation is usually referred too in levels. The highest access level is normally <a href="Glossary.html#Admin" target="Glossary">administrator</a> level access where as the lowest is normally <a href="Glossary.html#Guest" target="Glossary">guest</a> level.</p>
-			
+	</div>
+</div>
+<h2 id="MethOfAuth"><u><b>Methods of Authentication</b></u></h2>
+<div class="well">
+        <p>There are many different ways of validating a user's identity on a computer system. This section will cover a few of the existing types.</p>
+
+<h3 id="TxtBased"><u><b> Text based passwords</b></u></h3>
+	<div class="well">
+		<p>By far the most common authentcatio method in place acros the world is the text based password. This is the password you will be asked for on Facebook, Twitter, Amazon and almost every other website. They normally consist of letters from a-z, numbers from 0-9 and special characters, @_-)(!"£$%^&*?><~:;][{}. Though some websites have rules about what symbols you can use.</br>
+The passwords we test on this site are text based passwords. <a href="checker.html">Try the checker here.</a></p>
+	</div>
+<h3 id="Biomet"><u><b> Biometrics</b></u></h3>
+	<div class="well">
+		<p><a href="Glossary.html#bio">Biometrics</a> is a matter of measuring aspets of your physical person to ensure a system you are who you claim to be. There are many different methods of performing biometrics all of them take some reading of a person's physical traits and compare these readings against information stored in a <a href="Glossary.html#DB">database</a> for validation.</p>
+
+<h4 id="Iscan"><u><b> Eye Scan</b></u></h4>
+	<div class="well">
+		<p> There are two main types of eye scan.</br>
+		A <a href="Glossary.html#Retina"> retina</a> scan and an <a href="Glossary.html#Iris"> Iris</a> scan. These scans run similar to each other but are looking for something different on each occasion. </br>
+Retina Scan: A scan is performed to observe the pattern of the blood vessels on the retina. This pattern is unique for everyone</br>
+Iris Scan: A similar scan is performed but this time it is looking at the unique patterns within a person's Iris.</p>
+	</div>
+
+<h4 id="FingPriSc"><u><b> Finger print scan</b></u></h4>
+	<div class="well">
+		<p> Finger print scanners are becoming increasingly popular. One of the ways in which this technology has become increasingly popular is its increasingly common use for unlocking smartphones. However it has been used in as varied places as car security to computer systems in schools.</p>
+	</div>
+
+<h4 id="FaceReg"><u><b> Face Recognition</b></u></h4>
+	<div class="well">
+		<p>This technology depends on the existance of a camera to take an image of the user's face. This image is compared with one stored on the computer and certain areas of the face are compared to areas in the stored image to try and determine a match. Facial recognition changes wildly depending on the particual program running the comparison.</p>
+	</div>
+
+<h4 id="VoiceReg"><u><b> Voice Recognition</b></u></h4>
+	<div class="well">
+		<p>This method relies on the device having a microphone. The user will speak some sort of passphrase or code to access the device. The device will have stored the recording and will attempt to match this voice with the stored signal.</p>
+	</div>
 		<!-- /container -->
 
 		<!-- Bootstrap core JavaScript
