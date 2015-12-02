@@ -40,15 +40,13 @@
 			<h1 class="text-center">Checker</h1>
 			<hr>
 			<div class="text-center form-group">
-
-
 				<div class="row">
 					<div class="col-lg-6 col-lg-offset-3">
 						<form action="questions.html">
 							<p>Your password</p>
-								<input class="form-control password" type="password"></input>
+							<input id="passwordBox" class="form-control password" type="password"></input>
 							<div class="checkbox">
-								<input type="checkbox">Make password visible</input>
+								<input type="checkbox" onclick="toggleInput()">Make password visible</input>
 							</div>
 							<br>
 							<input class="btn btn-default" type="submit" value="Submit"></input>
@@ -57,9 +55,16 @@
 					</div>
 				</div>
 
-
-
-				
+				<script>
+					function toggleInput() {
+						type = document.getElementById('passwordBox').type;
+						if (type == "password") {
+							document.getElementById('passwordBox').type = "text";
+						} else {
+							document.getElementById('passwordBox').type = "password";
+						}
+					}
+				</script>
 			</div>
 		</div>
 

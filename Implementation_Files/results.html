@@ -21,9 +21,9 @@
 
 	<!-- Custom styles for this template -->
 	<link href="navbar.css" rel="stylesheet">
-    
-    <!-- Link to chart.js -->
-    <script src="../chartjs/Chart.js"></script>
+
+	<!-- Link to chart.js -->
+	<script src="../chartjs/Chart.js"></script>
 
 	<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
 	<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -44,9 +44,9 @@
 			<h1 class="text-center">Your password strength results</h1>
 			<p>Look how cool the radar graph is. Click on the different attributes to take a quiz/learn more about them!</p>
 			<hr>
-			<div class="text-center">
-				<div class="text-center" style="width:50%;">
-					<canvas id="canvas" width="400" height="400"></canvas> 
+			<div class="row">
+				<div class="col-lg-10 col-lg-offset-1">
+					<canvas id="canvas" style="margin-left:-20px"></canvas>
 				</div>
 			</div>
 			<br>
@@ -64,40 +64,40 @@
 
 		</div>
 		<!-- /container -->
-	<script>
-	var radarChartData = {
-		labels: ["Guessability", "Observability", "Memorability", "Recordability"],
-		datasets: [
-			{
-				label: "My First dataset",
-				fillColor: "rgba(220,220,220,0.2)",
-				strokeColor: "rgba(220,220,220,1)",
-				pointColor: "rgba(220,220,220,1)",
-				pointStrokeColor: "#fff",
-				pointHighlightFill: "#fff",
-				pointHighlightStroke: "rgba(220,220,220,1)",
-				data: [65,59,90,81]
+		<script>
+			var radarChartData = {
+				labels: ["Guessability", "Observability", "Memorability", "Recordability"],
+				datasets: [
+					{
+						label: "My First dataset",
+						fillColor: "rgba(220,220,220,0.2)",
+						strokeColor: "rgba(220,220,220,1)",
+						pointColor: "rgba(220,220,220,1)",
+						pointStrokeColor: "#fff",
+						pointHighlightFill: "#fff",
+						pointHighlightStroke: "rgba(220,220,220,1)",
+						data: [65, 59, 90, 81]
 			},
-			{
-				label: "My Second dataset",
-				fillColor: "rgba(151,187,205,0.2)",
-				strokeColor: "rgba(151,187,205,1)",
-				pointColor: "rgba(151,187,205,1)",
-				pointStrokeColor: "#fff",
-				pointHighlightFill: "#fff",
-				pointHighlightStroke: "rgba(151,187,205,1)",
-				data: [28,48,40,19]
+					{
+						label: "My Second dataset",
+						fillColor: "rgba(151,187,205,0.2)",
+						strokeColor: "rgba(151,187,205,1)",
+						pointColor: "rgba(151,187,205,1)",
+						pointStrokeColor: "#fff",
+						pointHighlightFill: "#fff",
+						pointHighlightStroke: "rgba(151,187,205,1)",
+						data: [28, 48, 40, 19]
 			}
 		]
-	};
+			};
 
-	window.onload = function(){
-		window.myRadar = new Chart(document.getElementById("canvas").getContext("2d")).Radar(radarChartData, {
-			responsive: true
-		});
-	}
-	</script>
-	
+			window.onload = function () {
+				window.myRadar = new Chart(document.getElementById("canvas").getContext("2d")).Radar(radarChartData, {
+					responsive: true
+				});
+			}
+		</script>
+
 		<!-- Bootstrap core JavaScript
     ================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
