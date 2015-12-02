@@ -18,6 +18,7 @@
 
 	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 	<link href="bootstrap/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <script src="menu.js"></script>
 
 	<!-- Custom styles for this template -->
 	<link href="navbar.css" rel="stylesheet">
@@ -47,9 +48,9 @@
 					<p>Have you used this password before?</p>
 					<div class="radio" style="padding-left:30px;">
 						<p>
-							<input type="radio">Yes</input>
+							<input type="radio" name="q1" value="true">Yes</input>
 							<br>
-							<input type="radio">No</input>
+							<input type="radio" name="q1" value="false">No</input>
 						</p>
 					</div>
 
@@ -57,9 +58,9 @@
 					<p>Does your password contain any personal information?</p>
 					<div class="radio" style="padding-left:30px;">
 						<p>
-							<input type="radio">Yes</input>
+							<input type="radio" name="q2" value="true">Yes</input>
 							<br>
-							<input type="radio">No</input>
+							<input type="radio" name="q2" value="false">No</input>
 						</p>
 					</div>
 
@@ -67,11 +68,11 @@
 					<p>Where would you use this password?</p>
 					<div class="radio" style="padding-left:30px;">
 						<p>
-							<input type="radio">Mostly around other people</input>
+							<input type="radio" name="q3" value="0">Mostly around other people</input>
 							<br>
-							<input type="radio">Mixed</input>
+							<input type="radio" name="q3" value="1">Mixed</input>
 							<br>
-							<input type="radio">Rarely around other people</input>
+							<input type="radio" name="q3" value="2">Rarely around other people</input>
 							<br>
 						</p>
 					</div>
@@ -80,18 +81,17 @@
 					<p>How important would you rate this password?</p>
 					<div class="radio" style="padding-left:30px;">
 						<p>
-							<input type="radio">Important</input>
+							<input type="radio" name="q4" value="0">Important</input>
 							<br>
-							<input type="radio">Meh</input>
+							<input type="radio" name="q4" value="1">Meh</input>
 							<br>
-							<input type="radio">Unimportant</input>
+							<input type="radio" name="q4" value="2">Unimportant</input>
 						</p>
 					</div>
 					<br>
-					<a href="results.html">
-						<button class="btn btn-default">Get The Result</button>
-					</a>
-
+					<div class="resultsButton" onclick="setupChecker()">
+						<button class="btn btn-lg btn-success">Get The Result</button>
+					</div>
 				</div>
 			</div>
 		</div>
