@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!-- Icon -->
+	<!-- <link rel="icon" href="../../favicon.ico">-->
+
+	<title>Password Strength Meter</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<link href="bootstrap/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="navbar.css" rel="stylesheet">
+
+	<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+	<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+	<script src="bootstrap/js/ie-emulation-modes-warning.js"></script>
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="jumbotron">
+			<h1 class="text-center">The Password Strength Meter</h1>
+			<hr>
+			<h2>What is it?</h2>
+
+			<p>There are many password strength meters in place today. You see them when you are registering for almot any website telling you if your password is 'weak', 'strong' or somewhere in between. But what does 'weak' or 'strong' really mean? With this thought in mind we decided to create a meter that tells you a little bit more about the passwords you create.</p></br></br>
+
+			<h2>How does it work?</h2>
+
+			<p>How it works is simple, you will be asked to provide a password, we will ask you some questions about the password and based on the password and your answers we will tell you about your password. If you are eager to try it out then go ahead and click on the button below to try it out.</p>
+
+			<div class="text-center ">
+				<a href="checker.html" class="btn btn-lg btn-success">Password checker</a>
+				<a href="checker.html" class="btn btn-lg btn-success">Take The Quiz</a>
+			</div>
+			
+			<p>Or if you are interested in learning some more about authentication, passwords and the criteria we judge them by then why not have a look at our information centre?</p></br>
+
+			<div class="text-center ">
+				<a href="information.html" class="btn-lg btn-success">Information Centre</a>
+			</div></br>
+
+			<h2> About the team<h2>
+			<p><!-- To be filled in later --></p>
+
+			<!-- <a href="information.html"></a> -->
+
+
+
+			<!-- Can we put a link to the information html in the footer of this page? -->
+		</div>
+
+	</div>
+	<!-- /container -->
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+		window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+	</script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+
+</html>

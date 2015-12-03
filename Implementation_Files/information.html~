@@ -159,7 +159,7 @@ However this type of input has shown to be rather insecure as the pattern can be
 <h4 id="Doodle"><u><b> Doodle based</b></u></h4>
 	<div class="well">
 		<p>Doodle based authentication is where a user draws a pattern, shape or image to unlock their device. Different versions of this kind of authentication use different rules. Some have squares and the aspect that matters is what order the squares are crossed in.</br> <img src="Images/Sketch_based.png" alt="Doodle authentication image" style="width:450px;height:447px;"></br>
-There are other versions that require a user to sketch an image which is saved to the device and the user needs to redraw the image each time they wish to unlock the device.
+There are other versions that require a user to sketch an image which is saved to the device and the user needs to redraw the image each time they wish to unlock the device.</br>
 </p>
 
 		<!-- /container -->
