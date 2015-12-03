@@ -54,8 +54,8 @@
 			<p style="text-indent:5em"><a href="#Imgbase">2.3.</a> Image based</p>
 			<p style="text-indent:10em"><a href="#Imgsel">2.3.1.</a> Image selection</p>	<p style="text-indent:10em"><a href="#Imgpoint">2.3.2.</a> Point selection</p>	
 			<p style="text-indent:5em"><a href="#Patrnbase">2.4.</a> Pattern based</p>
-			<p style="text-indent:10em"><a href="#Sketch">2.4.1.</a> Sketch based</p>		<p style="text-indent:10em"><a>2.4.2.</a> Doodle based</p>
-			<p style="text-indent:5em"><a>2.5.</a> Handwritting based</p>
+			<p style="text-indent:10em"><a href="#Sketch">2.4.1.</a> Sketch based</p>		<p style="text-indent:10em"><a href="#Doodle">2.4.2.</a> Doodle based</p>
+			<p style="text-indent:5em"><a href="#Hndwrit">2.5.</a> Handwritting based</p>
 			<p style="text-indent:5em"><a>2.6.</a> Two factor authentication</p>
 			<p><a>3.</a> Factors of authentication</p>
 			<p style="text-indent:5em"><a>3.1.</a> Guessability</p>
@@ -159,8 +159,15 @@ However this type of input has shown to be rather insecure as the pattern can be
 <h4 id="Doodle"><u><b> Doodle based</b></u></h4>
 	<div class="well">
 		<p>Doodle based authentication is where a user draws a pattern, shape or image to unlock their device. Different versions of this kind of authentication use different rules. Some have squares and the aspect that matters is what order the squares are crossed in.</br> <img src="Images/Sketch_based.png" alt="Doodle authentication image" style="width:450px;height:447px;"></br>
-There are other versions that require a user to sketch an image which is saved to the device and the user needs to redraw the image each time they wish to unlock the device.</br>
+There are other versions that require a user to sketch an image which is saved to the device and the user needs to redraw the image each time they wish to unlock the device.
 </p>
+	</div>
+	</div>
+
+<h3 id="Hndwrit"><u><b> Handwritting based</b></u></h3>
+	<div class="well">
+		<p>Another method of authentication is to use hand writting recognition. There are a couple of methods to this approach. One of these methods is to write a certain phrase when you wish to unlock your device. This writting will be compared to a version you gave the device when you set it up and if they are found to match then the devie is unlocked. Another way is similar to how <a href="#Imgsel">image selection</a> works. That is you will be shown a message written in a number of different styles and you need to select the one written in your hand writing. An example can be seen below</br>
+<img src="Images/Handwritten.png" alt="Select handwritting" style="width:450px;height:447px;"></p>
 
 		<!-- /container -->
 
