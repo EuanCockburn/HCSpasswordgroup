@@ -51,8 +51,8 @@
 			<p style="text-indent:5em"><a href="#TxtBased">2.1.</a> Text based passwords</p>
 			<p style="text-indent:5em"><a href="#Biomet">2.2.</a> Biometrics</p>
 			<p style="text-indent:10em"><a href="#Iscan">2.2.1.</a> Eye scan</p>		<p style="text-indent:10em"><a href="#FingPriSc">2.2.2.</a> Finger print scan</p>	<p style="text-indent:10em"><a href="#FaceReg">2.2.3.</a> Face recognition</p>	<p style="text-indent:10em"><a href="#VoiceReg">2.2.4.</a> Voice recognition</p>
-			<p style="text-indent:5em"><a>2.3.</a> Image based</p>
-			<p style="text-indent:10em"><a>2.3.1.</a> Image selection</p>	<p style="text-indent:10em"><a>2.3.2.</a> Point selection</p>	
+			<p style="text-indent:5em"><a href="#Imgbase">2.3.</a> Image based</p>
+			<p style="text-indent:10em"><a href="#Imgsel">2.3.1.</a> Image selection</p>	<p style="text-indent:10em"><a href="#Imgpoint">2.3.2.</a> Point selection</p>	
 			<p style="text-indent:5em"><a>2.4.</a> Pattern based</p>
 			<p style="text-indent:10em"><a>2.4.1.</a> Sketch based</p>		<p style="text-indent:10em"><a>2.4.2.</a> Doodle based</p>
 			<p style="text-indent:5em"><a>2.5.</a> Handwritting based</p>
@@ -124,6 +124,21 @@ Iris Scan: A similar scan is performed but this time it is looking at the unique
 	<div class="well">
 		<p>This method relies on the device having a microphone. The user will speak some sort of passphrase or code to access the device. The device will have stored the recording and will attempt to match this voice with the stored signal.</p>
 	</div>
+	</div>
+
+<h3 id="Imgbase"><u><b> Image based</b></u></h3>
+	<div class="well">
+		<p>There has been a lot of work done on using pictures for authentication rather than text based passwords. There have been many different attempts at using images but there are two main methodologies followed</p>
+	
+<h4 id="Imgsel"><u><b>Image selection</b></u></h4>
+	<div class="well">
+		<p>The method of image selection relies on the user having selected an image, or a series of images, and they must select this image from a group of possible options. Some set ups have the user select a rule to select an image by such as 'select the dog', or some similar rule. This methodolgy has had issues with certain options such as how many images to show at a time, what kinds of devices are capable of using this system. For example it can be difficult to display a large number of images on a smartphone and almost impossible on a smart watch. An example of image based authentication can be seen below.</p>
+	<img src="Images/Image-Based_Authentication.jpg" alt="Image based Authentication" style="width:510px;height:447px;">
+	</div>
+
+<h4 id="Imgpoint"><u><b>Point selection</b></u></h4>
+	<div class="well">
+		<p>Another method of using images is to have a single fixed image and have the user select a couple of points on the image to act as a code. So when a user attempts to login they are presented the image and select their points in the order they set previously. One of the common issues with this system is that people tend to pick the same spots on an image favouring prominant features such as towers or street signs.</p>
 		<!-- /container -->
 
 		<!-- Bootstrap core JavaScript
