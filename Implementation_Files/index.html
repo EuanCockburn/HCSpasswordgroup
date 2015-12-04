@@ -35,80 +35,110 @@
 
 <body>
 
-
-	<div class="container">
-		<div class="jumbotron">
-			<h1 class="text-center">The Password Strength Meter</h1>
-			<hr>
-			<br>
-			<div class="text-center form-group">
-				<div class="row">
-					<div class="col-lg-10 col-lg-offset-1 input-group">
-						<form action="questions.html">
-							<div class="input-group">
-								<input id="passwordBox" class="form-control password" type="password" placeholder="Enter your password" style="text-align:center;font-size:30px;height:60px;"></input>
-								<div class="input-group-btn">
-									<a class="btn btn-lg btn-info" style="margin:-20px; margin-left:-2px; height:60px;" onclick="toggleInput()"><span id="eye" class="glyphicon glyphicon-eye-close"></span></a>
-								</div>
-							</div>
-
-							<br>
-							<input class="btn btn-lg btn-success" style="font-size:20px;" type="submit" value="Analyse Password"></input>
-						</form>
-					</div>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
 				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="index.html" style="font-size: 19px;">Home</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="font-size: 19px;" role="button" aria-haspopup="true" aria-expanded="false">Information Centre<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="information.html" style="font-size: 19px;">Information Centre</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="Contents.html " style="font-size: 14px;">Contents</a></li>
+								<li><a href="Glossary.html " style="font-size: 14px;">Glossary</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+			<!--/.container-fluid -->
+		</nav>
+		<br>
+		<br>
+		<br>
 
-				<script>
-					function toggleInput() {
-						type = document.getElementById('passwordBox').type;
-						if (type == "password") {
-							document.getElementById('passwordBox').type = "text";
-							document.getElementById('eye').className = "glyphicon glyphicon-eye-open"
-						} else {
-							document.getElementById('passwordBox').type = "password";
-							document.getElementById('eye').className = "glyphicon glyphicon-eye-close"
+		<div class="container">
+			<div class="jumbotron">
+				<h1 class="text-center">The Password Strength Meter</h1>
+				<hr>
+				<br>
+				<div class="text-center form-group">
+					<div class="row">
+						<div class="col-lg-10 col-lg-offset-1 input-group">
+							<form action="questions.html">
+								<div class="input-group">
+									<input id="passwordBox" class="form-control password" type="password" placeholder="Enter your password" style="text-align:center;font-size:30px;height:60px;"></input>
+									<div class="input-group-btn">
+										<a class="btn btn-lg btn-info" style="margin:-20px; margin-left:-2px; height:60px;" onclick="toggleInput()"><span id="eye" class="glyphicon glyphicon-eye-close"></span></a>
+									</div>
+								</div>
+
+								<br>
+								<input class="btn btn-lg btn-info" style="font-size:20px;" type="submit" value="Analyse Password"></input>
+							</form>
+						</div>
+					</div>
+
+					<script>
+						function toggleInput() {
+							type = document.getElementById('passwordBox').type;
+							if (type == "password") {
+								document.getElementById('passwordBox').type = "text";
+								document.getElementById('eye').className = "glyphicon glyphicon-eye-open"
+							} else {
+								document.getElementById('passwordBox').type = "password";
+								document.getElementById('eye').className = "glyphicon glyphicon-eye-close"
+							}
 						}
-					}
-				</script>
+					</script>
+				</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="container">
-		<div class="jumbotron">
-			<h2>What is it?</h2>
-			<hr>
-			<p>There are many password strength meters in place today. You see them when you are registering for almost any website telling you if your password is 'weak', 'strong' or somewhere in between. But what does 'weak' or 'strong' really mean? With this thought in mind we decided to create a meter that tells you a little bit more about the passwords you create.</p>
-		</div>
-	</div>
-
-	<div class="container">
-		<div class="jumbotron">
-			<h2>More Information</h2>
-			<hr>
-			<p>If you are interested in learning some more about authentication, passwords and the criteria we judge them by then why not have a look at our information centre?</p>
-			</br>
-
-			<div class="text-center ">
-				<a href="information.html" class="btn btn-lg btn-success">Information Centre</a>
+		<div class="container">
+			<div class="jumbotron">
+				<h2>What is it?</h2>
+				<hr>
+				<p>There are many password strength meters in place today. You see them when you are registering for almost any website telling you if your password is 'weak', 'strong' or somewhere in between. But what does 'weak' or 'strong' really mean? With this thought in mind we decided to create a meter that tells you a little bit more about the passwords you create.</p>
 			</div>
-			</br>
-
 		</div>
-	</div>
 
+		<div class="container">
+			<div class="jumbotron">
+				<h2>More Information</h2>
+				<hr>
+				<p>If you are interested in learning some more about authentication, passwords and the criteria we judge them by then why not have a look at our information centre?</p>
+				</br>
 
+				<div class="text-center ">
+					<a href="information.html" style="font-size:20px;" class="btn btn-lg btn-info">Information Centre</a>
+				</div>
+				</br>
 
-	<!-- Bootstrap core JavaScript
+			</div>
+		</div>
+
+		<!-- Bootstrap core JavaScript
     ================================================== -->
-	<!-- Placed at the end of the document so the pages load faster -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script>
-		window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
-	</script>
-	<script src="bootstrap/js/bootstrap.min.js"></script>
-	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-	<script src="bootstrap/js/ie10-viewport-bug-workaround.js"></script>
-</body>
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script>
+			window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+		</script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+		<script src="bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+	</body>
 
 </html>
