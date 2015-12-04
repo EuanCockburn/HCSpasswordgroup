@@ -80,9 +80,13 @@ Again</a>
         </div>
                 <!-- /container -->
                 <script>
-                        var q4 = 4;
-                        var threshold = 50 + (q4 * 10);
-                        var radarChartData = {
+                        threshold = 50;
+						
+						if (sessionStorage.getItem("q4") != null) {
+							threshold = 70 - (10 * sessionStorage.getItem("q4"));
+						}
+						
+						var radarChartData = {
                                 labels: ["", "", "", ""],
                                 datasets: [
 
