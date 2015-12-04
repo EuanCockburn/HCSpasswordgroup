@@ -21,6 +21,8 @@ requires:
 
 provides: StrongPass
 
+source: http://jsfiddle.net/dimitar/n8Dza/
+
 ...
 */
 (function(){
@@ -313,7 +315,7 @@ provides: StrongPass
 	// change to any object / ns
 }.call(this));
 
-var passwordChecker = new StrongPass("password", {
+var passwordChecker = new StrongPass("passwordBox", {
     render: true,
     onPass: function(score, verdict) {
         console.log('pass', score, verdict)
