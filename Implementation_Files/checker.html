@@ -25,6 +25,59 @@
 	<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
 	<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 	<script src="bootstrap/js/ie-emulation-modes-warning.js"></script>
+	
+	<script>
+	$(document).ready(
+
+function() {
+    $('#passwordBox').keyup(
+
+    function() {
+      var password = $("#passwordBox").val()
+      
+      // Bell curve function
+      var bell = 20 - Math.abs(password.length - 12);
+      if (password.length >= 6) {
+      console.log("bell value: " + bell)
+      } else {
+        console.log("bell value: 0 (too small)")
+        
+      }
+      var banned = [
+			// see study here: https://www.skyhighnetworks.com/cloud-security-blog/you-wont-believe-the-20-most-popular-cloud-service-passwords/
+			'123456',
+      'password',
+      '12345',
+      '1234',
+			'football',
+      'qwerty',
+      '1234567890',
+      '1234567',
+			'princess',
+      'solo',
+      'login',
+      'welcome',
+			'loveme',
+      'hottie',
+      'abc123',
+      '121212',
+			'123456789',
+      'flower',
+      'passw0rd',
+      'dragon'
+		];
+      // check if password is one of banned passwords.
+      if(password.length == 0) { console.log("[empty]")}
+      if($.inArray(password, banned) > 0) {console.log("BANNED PASSWORD");}
+      if(password.match(/[a-zA-Z0-9]/)) { console.log("+ alphanumeric")}
+      if(password.match(/[0-9]+/)) { console.log("##numbersonly##")}
+      if(password.match(/[a-z].*[A-Z]|[A-Z].*[a-z]/)) {console.log("mIxEd cAsE")}
+      if(password.match(/[!@#$%^&*?_~áéíóú]/)) { console.log("+ special")}
+      if(password.match(/[ ]/)) { console.log("s p a c e s")}
+      if(password.toLowerCase().match(/correcthorsebatterystaple|hunter2/)) { console.log("meme")}
+    });
+})
+	</script>
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>

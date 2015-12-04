@@ -1,8 +1,6 @@
 function setupChecker() {
-    sessionStorage.clear();
-    
-    
-    
+	
+	
     for (var i = 1; i <= 4; i++) {
         var radioName = "q" + i;
         radioOptions = document.getElementsByName(radioName);

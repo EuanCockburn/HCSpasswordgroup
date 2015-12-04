@@ -22,19 +22,6 @@
 	<!-- Custom styles for this template -->
 	<link href="navbar.css" rel="stylesheet">
 	
-	<!-- Password strength calculator -->
-	<script src="MooTools-Core-1.5.2.js"></script>
-	<script src="StrongPass.js">var passwordChecker = new StrongPass("passwordBox", {
-    render: true,
-    onPass: function(score, verdict) {
-        console.log('pass', score, verdict)
-    },
-    onFail: function(score, verdict) {
-        console.log('fail', score, verdict);
-        
-    }
-});</script>
-
 	<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
 	<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 	<script src="bootstrap/js/ie-emulation-modes-warning.js"></script>
@@ -159,9 +146,77 @@ div.pass-hint {
 		<!-- Placed at the end of the document so the pages load faster -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script>
-			jQuery.noConflict();
 			window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
 		</script>
+		
+			<!-- Password strength calculator -->
+	<script>
+$(document).ready(
+
+function() {
+    $('#passwordBox').keyup(
+
+    function() {
+      var password = $("#passwordBox").val()
+      
+      // Bell curve function
+      var bell = 20 - Math.abs(password.length - 12);
+      if (password.length >= 6) {
+      console.log("bell value: " + bell)
+      } else {
+        console.log("bell value: 0 (too small)")
+        
+      }
+      var banned = [
+			// see study here: https://www.skyhighnetworks.com/cloud-security-blog/you-wont-believe-the-20-most-popular-cloud-service-passwords/
+			'123456',
+      'password',
+      '12345',
+      '1234',
+			'football',
+      'qwerty',
+      '1234567890',
+      '1234567',
+			'princess',
+      'solo',
+      'login',
+      'welcome',
+			'loveme',
+      'hottie',
+      'abc123',
+      '121212',
+			'123456789',
+      'flower',
+      'passw0rd',
+      'dragon'
+		];
+      // check if password is one of banned passwords.
+      
+	  sessionStorage.clear();
+	  sessionStorage.setItem("pwLength", password.length);
+
+      sessionStorage.setItem("isCommon", $.inArray(password, banned) > 0)
+	  console.log("isCommon", $.inArray(password, banned) > 0)
+
+	  sessionStorage.setItem("isAlphaNum", password.match(/[a-zA-Z0-9]/) != null)
+      console.log("isAlphaNum", password.match(/[a-zA-Z0-9]/) != null)
+
+	  sessionStorage.setItem("hasSpaces", password.match(/[ ]/) != null)
+	  console.log("hasSpaces", password.match(/[ ]/) != null)
+
+	  sessionStorage.setItem("numbersOnly", password.match(/[0-9]+/) != null)
+	  console.log("numbersOnly", password.match(/^[0-9]+$/) != null)
+	  
+	  sessionStorage.setItem("mixedCase", password.match(/[a-z].*[A-Z]|[A-Z].*[a-z]/) != null)
+	  console.log("mixedCase", password.match(/[a-z].*[A-Z]|[A-Z].*[a-z]/) != null)
+	  
+      sessionStorage.setItem("hasSpecial", password.match(/[!@#$%^&*?_~áéíóú]/) != null)
+	  console.log("hasSpecial", password.match(/[!@#$%^&*?_~áéíóú]/) != null)
+	  
+      sessionStorage.setItem("memetic", password.toLowerCase().match(/^correcthorsebatterystaple$|^hunter2$/) != null)
+	  console.log("memetic", password.toLowerCase().match(/^correcthorsebatterystaple$|^hunter2$/) != null)
+    });
+})</script>
 		<script src="bootstrap/js/bootstrap.min.js"></script>
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 		<script src="bootstrap/js/ie10-viewport-bug-workaround.js"></script>
