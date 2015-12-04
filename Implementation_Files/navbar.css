@@ -1,9 +1,8 @@
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: lightcyan;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: rgb(1,180,222);
 }
-
 
 .jumbotron {
 	padding-top: 20px;
@@ -23,12 +22,24 @@ body {
 	padding-top: 20px;
 }
 
-.radio{
+.radio {
 	font-family: ;
-    display: inline-block;
-    font-size: 12pt;
+	display: inline-block;
+	font-size: 12pt;
 }
 
-h2{
+h2 {
 	text-align: center;
+}
+
+@media (min-width: 768px) {
+	.navbar .navbar-nav {
+		display: inline-block;
+		float: none;
+		vertical-align: top;
+	}
+	.navbar .navbar-collapse {
+		text-align: center;
+		background-color: white;
+	}
 }
