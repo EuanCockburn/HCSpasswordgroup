@@ -35,41 +35,67 @@
 
 <body>
 
+
 	<div class="container">
 		<div class="jumbotron">
 			<h1 class="text-center">The Password Strength Meter</h1>
 			<hr>
-			<h2>What is it?</h2>
+			<br>
+			<div class="text-center form-group">
+				<div class="row">
+					<div class="col-lg-10 col-lg-offset-1 input-group">
+						<form action="questions.html">
+							<div class="input-group">
+								<input id="passwordBox" class="form-control password" type="password" placeholder="Enter your password" style="text-align:center;font-size:30px;height:60px;"></input>
+								<div class="input-group-btn">
+									<a class="btn btn-lg btn-default" style="margin:-20px; margin-left:-2px; height:60px;" onclick="toggleInput()"><span class="glyphicon glyphicon-eye-close"></span></a>
+								</div>
+							</div>
 
-			<p>There are many password strength meters in place today. You see them when you are registering for almot any website telling you if your password is 'weak', 'strong' or somewhere in between. But what does 'weak' or 'strong' really mean? With this thought in mind we decided to create a meter that tells you a little bit more about the passwords you create.</p></br></br>
+							<br>
+							<input class="btn btn-lg btn-default" style="font-size:20px;" type="submit" value="Analyse Password "></input>
+						</form>
+					</div>
+				</div>
 
-			<h2>How does it work?</h2>
-
-			<p>How it works is simple, you will be asked to provide a password, we will ask you some questions about the password and based on the password and your answers we will tell you about your password. If you are eager to try it out then go ahead and click on the button below to try it out.</p>
-
-			<div class="text-center ">
-				<a href="checker.html" class="btn btn-lg btn-success">Password checker</a>
-				<!--<a href="checker.html" class="btn btn-lg btn-success">Take The Quiz</a>-->
+				<script>
+					function toggleInput() {
+						type = document.getElementById('passwordBox').type;
+						if (type == "password") {
+							document.getElementById('passwordBox').type = "text";
+						} else {
+							document.getElementById('passwordBox').type = "password";
+						}
+					}
+				</script>
 			</div>
-			
-			<p>Or if you are interested in learning some more about authentication, passwords and the criteria we judge them by then why not have a look at our information centre?</p></br>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="jumbotron">
+			<h2>What is it?</h2>
+			<hr>
+			<p>There are many password strength meters in place today. You see them when you are registering for almot any website telling you if your password is 'weak', 'strong' or somewhere in between. But what does 'weak' or 'strong' really mean? With this thought in mind we decided to create a meter that tells you a little bit more about the passwords you create.</p>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="jumbotron">
+			<h2>More Information</h2>
+			<hr>
+			<p>If you are interested in learning some more about authentication, passwords and the criteria we judge them by then why not have a look at our information centre?</p>
+			</br>
 
 			<div class="text-center ">
-				<a href="information.html" class="btn-lg btn-success">Information Centre</a>
-			</div></br>
+				<a href="information.html" class="btn btn-lg btn-default">Information Centre</a>
+			</div>
+			</br>
 
-			<h2> About the team<h2>
-			<p><!-- To be filled in later --></p>
-
-			<!-- <a href="information.html"></a> -->
-
-
-
-			<!-- Can we put a link to the information html in the footer of this page? -->
 		</div>
-
 	</div>
-	<!-- /container -->
+
+
 
 	<!-- Bootstrap core JavaScript
     ================================================== -->

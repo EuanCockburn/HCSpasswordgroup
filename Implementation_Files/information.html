@@ -38,149 +38,126 @@
 	<div class="container">
 		<div class="jumbotron">
 			<h1 class="text-center">The Information Centre</h1>
-		
+		</div>
+	</div>
+	<div class="container">
+		<div class="jumbotron">
+			<br>
+			<h2 id="Authentication1"><b>Authentication</b></h2>
+			<br>
+
+			<p><a href="Glossary.html#Authentication" target="Glossary">Authentication</a> in this context is the process by which a person proves who they are. It can be rather confusing as Authentication not only refers to the process as a whole but also to a particular stage of the process.</p>
 			<hr>
-<!-- TO be anchored below contents--><p>In a hurry? <a href="#Authentication1" class="btn btn-lg btn-success">Quick Start</a></p>	
-			<h3>Table of contents</h3>
-		
-			<p><a href="#Authentication1">1.</a> Authentication</p>
-			<p style="text-indent:5em"><a href="#Identification">1.1.</a> Identification</p>
-			<p style="text-indent:5em"><a href="#Authentication2">1.2.</a> Authentication</p>
-			<p style="text-indent:5em"><a href="#Authorisation">1.3.</a> Authorisation</p>
-			<p><a href="#MethOfAuth">2.</a> Methods of authentication</p>
-			<p style="text-indent:5em"><a href="#TxtBased">2.1.</a> Text based passwords</p>
-			<p style="text-indent:5em"><a href="#Biomet">2.2.</a> Biometrics</p>
-			<p style="text-indent:10em"><a href="#Iscan">2.2.1.</a> Eye scan</p>		<p style="text-indent:10em"><a href="#FingPriSc">2.2.2.</a> Finger print scan</p>	<p style="text-indent:10em"><a href="#FaceReg">2.2.3.</a> Face recognition</p>	<p style="text-indent:10em"><a href="#VoiceReg">2.2.4.</a> Voice recognition</p>
-			<p style="text-indent:5em"><a href="#Imgbase">2.3.</a> Image based</p>
-			<p style="text-indent:10em"><a href="#Imgsel">2.3.1.</a> Image selection</p>	<p style="text-indent:10em"><a href="#Imgpoint">2.3.2.</a> Point selection</p>	
-			<p style="text-indent:5em"><a href="#Patrnbase">2.4.</a> Pattern based</p>
-			<p style="text-indent:10em"><a href="#Sketch">2.4.1.</a> Sketch based</p>		<p style="text-indent:10em"><a href="#Doodle">2.4.2.</a> Doodle based</p>
-			<p style="text-indent:5em"><a href="#Hndwrit">2.5.</a> Handwritting based</p>
-			<p style="text-indent:5em"><a>2.6.</a> Two factor authentication</p>
-			<p><a>3.</a> Factors of authentication</p>
-			<p style="text-indent:5em"><a>3.1.</a> Guessability</p>
-			<p style="text-indent:5em"><a>3.2.</a> Observability</p>
-			<p style="text-indent:5em"><a>3.3.</a> Memorability</p>
-			<p style="text-indent:5em"><a>3.4.</a> Recordability</p>
+			<h3 id="Identification"><b> Identification</b></h3>
+
+			<p><a href="Glossary.html#Identification" target="Glossary">Identification</a> is the stage of the authentication process where you claim to be someone. There are multiple examples of identification in our day-to-day lives. This includes being asked for <a href="Glossary.html#I.D." target="Glossary">I.D.</a> such as a passport or driving license by someone.</br>
+				</br> Identification also takes place on computer systems, w see it all the time when being asked for our login details. Everytime we supply a website with our <a href="Glossary.html#Username" target="Glossary">username</a> or E-mail address we are providing them with our identity. Below are some examples of websites asking for identification.</p>
+			</br>
+			<img src="Images/Facebook_Login.png" alt="Facebook Login" style="width:300px;height:75px;"></br>
+			</br>
+			<img src="Images/Twitter_Login.png" alt="Twitter Login" style="width:300px;height:75px;">
+
 			<hr>
+			<h3 id="Authentication2"><b> Authentication</b></h3>
+			<p> Authentication in this context is the stage of the process where the identity that you have provided is <a href="Glossary.html#Validate" target="Glossary">validated</a>. When asked by a police officer or security guard to prouce an I.D. the authorisation stage of this exchange is when the I.D. is examined and either accepted or rejected.</br>
+				</br>
+				Validation on computer systems is most commonly characterised by password entry but there are multiple possible ways of doing this discussed <a>below</a>. The same examples seen above have been editted to bring emphasise to the authenticating element of the input.</p>
+			</br>
+			<img src="Images/Facebook_password.png" alt="Facebook Login" style="width:300px;height:75px;"></br>
+			</br>
+			<img src="Images/Twitter_password.png" alt="Twitter Login" style="width:300px;height:75px;">
 
+			<hr>
+			<h3 id="Authorisation"><b> Authorisation</b></h3>
 
-<h2 id="Authentication1"><u><b>Authentication</b></u></h2>
-<div class="well">
-        <p><a href="Glossary.html#Authentication" target="Glossary">Authentication</a> in this context is the process by which a person proves who they are. It can be rather confusing as Authentication not only refers to the process as a whole but also to a particular stage of the process.</p>
-
-	<h3 id="Identification"><u><b> Identification</b></u></h3>
-	<div class="well">
-		<p><a href="Glossary.html#Identification" target="Glossary">Identification</a> is the stage of the authentication process where you claim to be someone. There are multiple examples of identification in our day-to-day lives. This includes being asked for <a href="Glossary.html#I.D." target="Glossary">I.D.</a> such as a passport or driving license by someone.</br></br> Identification also takes place on computer systems, we see it all the time when being asked for our login details. Everytime we supply a website with our <a href="Glossary.html#Username" target="Glossary">username</a> or E-mail address we are providing them with our identity. Below are some examples of websites asking for identification.</p></br>
-<img src="Images/Facebook_Login.png" alt="Facebook Login" style="width:300px;height:75px;"></br></br>
-<img src="Images/Twitter_Login.png" alt="Twitter Login" style="width:300px;height:75px;">
+			<p> <a href="Glossary.html#Authorisation" target="Glossary">Authorisation</a> is the stage of deciding what you can access after you have claimed and proven your identity. This could be after you have given your I.D. to a security guard and he has verified it. The authorsation stage would be deciding which areas of a building you can or cannot access.</br> On a computer system this translates to files and folders that you can or cannot access. Authorisation is usually referred too in levels. The highest access level is normally <a href="Glossary.html#Admin" target="Glossary">administrator</a> level access where as the lowest is normally <a href="Glossary.html#Guest" target="Glossary">guest</a> level.</p>
+			<br>
+		</div>
 	</div>
+<div class="container">
+		<div class="jumbotron">
+	<h2 id="MethOfAuth"><b>Methods of Authentication</b></h2>
+	<br>
 
-	<h3 id="Authentication2"><u><b> Authentication</b></u></h3>
-	<div class="well">
-		<p> Authentication in this context is the stage of the process where the identity that you have provided is <a href="Glossary.html#Validate" target="Glossary">validated</a>. When asked by a police officer or security guard to prouce an I.D. the authorisation stage of this exchange is when the I.D. is examined and either accepted or rejected.</br></br>
-Validation on computer systems is most commonly characterised by password entry but there are multiple possible ways of doing this discussed <a>below</a>. The same examples seen above have been editted to bring emphasise to the authenticating element of the input.</p></br>
-<img src="Images/Facebook_password.png" alt="Facebook Login" style="width:300px;height:75px;"></br></br>
-<img src="Images/Twitter_password.png" alt="Twitter Login" style="width:300px;height:75px;">
-	</div>
+	<p>There are many different ways of validating a user's identity on a computer system. This section will cover a few of the existing types.</p>
+	<hr>
+	<h3 id="TxtBased"><b> Text based passwords</b></h3>
 
-	<h3 id="Authorisation"><u><b> Authorisation</b></u></h3>
-	<div class="well">
-		<p> <a href="Glossary.html#Authorisation" target="Glossary">Authorisation</a> is the stage of deciding what you can access after you have claimed and proven your identity. This could be after you have given your I.D. to a security guard and he has verified it. The authorsation stage would be deciding which areas of a building you can or cannot access.</br> On a computer system this translates to files and folders that you can or cannot access. Authorisation is usually referred too in levels. The highest access level is normally <a href="Glossary.html#Admin" target="Glossary">administrator</a> level access where as the lowest is normally <a href="Glossary.html#Guest" target="Glossary">guest</a> level.</p>
-	</div>
-</div>
-<h2 id="MethOfAuth"><u><b>Methods of Authentication</b></u></h2>
-<div class="well">
-        <p>There are many different ways of validating a user's identity on a computer system. This section will cover a few of the existing types.</p>
+	<p>By far the most common authentcatio method in place acros the world is the text based password. This is the password you will be asked for on Facebook, Twitter, Amazon and almost every other website. They normally consist of letters from a-z, numbers from 0-9 and special characters, @_-)(!"£$%^&*?>
+		<~:;][{}. Though some websites have rules about what symbols you can use.</br>
+			The passwords we test on this site are text based passwords. <a href="checker.html">Try the checker here.</a></p>
+	<hr>
+	<h3 id="Biomet"><b> Biometrics</b></h3>
 
-<h3 id="TxtBased"><u><b> Text based passwords</b></u></h3>
-	<div class="well">
-		<p>By far the most common authentcatio method in place acros the world is the text based password. This is the password you will be asked for on Facebook, Twitter, Amazon and almost every other website. They normally consist of letters from a-z, numbers from 0-9 and special characters, @_-)(!"£$%^&*?><~:;][{}. Though some websites have rules about what symbols you can use.</br>
-The passwords we test on this site are text based passwords. <a href="checker.html">Try the checker here.</a></p>
-	</div>
-<h3 id="Biomet"><u><b> Biometrics</b></u></h3>
-	<div class="well">
-		<p><a href="Glossary.html#bio">Biometrics</a> is a matter of measuring aspets of your physical person to ensure a system you are who you claim to be. There are many different methods of performing biometrics all of them take some reading of a person's physical traits and compare these readings against information stored in a <a href="Glossary.html#DB">database</a> for validation.</p>
+	<p><a href="Glossary.html#bio">Biometrics</a> is a matter of measuring aspets of your physical person to ensure a system you are who you claim to be. There are many different methods of performing biometrics all of them take some reading of a person's physical traits and compare these readings against information stored in a <a href="Glossary.html#DB">database</a> for validation.</p>
 
-<h4 id="Iscan"><u><b> Eye Scan</b></u></h4>
-	<div class="well">
-		<p> There are two main types of eye scan.</br>
+	<h4 id="Iscan"><b> Eye Scan</b></h4>
+	<p> There are two main types of eye scan.</br>
 		A <a href="Glossary.html#Retina"> retina</a> scan and an <a href="Glossary.html#Iris"> Iris</a> scan. These scans run similar to each other but are looking for something different on each occasion. </br>
-Retina Scan: A scan is performed to observe the pattern of the blood vessels on the retina. This pattern is unique for everyone</br>
-Iris Scan: A similar scan is performed but this time it is looking at the unique patterns within a person's iris.</br>
-<img src="Images/CryptoResearchEyeScanner.png" alt="Eye scanner" style="width:400px;height:300px;"></p>
-	</div>
+		Retina Scan: A scan is performed to observe the pattern of the blood vessels on the retina. This pattern is unique for everyone</br>
+		Iris Scan: A similar scan is performed but this time it is looking at the unique patterns within a person's iris.</br>
+		<img src="Images/CryptoResearchEyeScanner.png" alt="Eye scanner" style="width:400px;height:300px;"></p>
 
-<h4 id="FingPriSc"><u><b> Finger print scan</b></u></h4>
-	<div class="well">
-		<p> Finger print scanners are becoming increasingly popular. One of the ways in which this technology has become increasingly popular is its increasingly common use for unlocking smartphones. However it has been used in as varied places as car security to computer systems in schools.</br>
-<img src="Images/finger_scanner.jpg" alt="Finger scanner" style="width:300px;height:200px;"></p>
-	</div>
 
-<h4 id="FaceReg"><u><b> Face Recognition</b></u></h4>
-	<div class="well">
-		<p>This technology depends on the existance of a camera to take an image of the user's face. This image is compared with one stored on the computer and certain areas of the face are compared to areas in the stored image to try and determine a match. Facial recognition changes wildly depending on the particual program running the comparison.</p>
-	</div>
+	<h4 id="FingPriSc"><b> Finger print scan</b></h4>
 
-<h4 id="VoiceReg"><u><b> Voice Recognition</b></u></h4>
-	<div class="well">
-		<p>This method relies on the device having a microphone. The user will speak some sort of passphrase or code to access the device. The device will have stored the recording and will attempt to match this voice with the stored signal.</p>
-	</div>
-	</div>
+	<p> Finger print scanners are becoming increasingly popular. One of the ways in which this technology has become increasingly popular is its increasingly common use for unlocking smartphones. However it has been used in as varied places as car security to computer systems in schools.</br>
+		<img src="Images/finger_scanner.jpg" alt="Finger scanner" style="width:300px;height:200px;"></p>
 
-<h3 id="Imgbase"><u><b> Image based</b></u></h3>
-	<div class="well">
-		<p>There has been a lot of work done on using pictures for authentication rather than text based passwords. There have been many different attempts at using images but there are two main methodologies followed</p>
-	
-<h4 id="Imgsel"><u><b>Image selection</b></u></h4>
-	<div class="well">
-		<p>The method of image selection relies on the user having selected an image, or a series of images, and they must select this image from a group of possible options. Some set ups have the user select a rule to select an image by such as 'select the dog', or some similar rule. This methodolgy has had issues with certain options such as how many images to show at a time, what kinds of devices are capable of using this system. For example it can be difficult to display a large number of images on a smartphone and almost impossible on a smart watch. An example of image based authentication can be seen below.</p>
+
+	<h4 id="FaceReg"><b> Face Recognition</b></h4>
+	<p>This technology depends on the existance of a camera to take an image of the user's face. This image is compared with one stored on the computer and certain areas of the face are compared to areas in the stored image to try and determine a match. Facial recognition changes wildly depending on the particual program running the comparison.</p>
+
+
+	<h4 id="VoiceReg"><b> Voice Recognition</b></h4>
+	<p>This method relies on the device having a microphone. The user will speak some sort of passphrase or code to access the device. The device will have stored the recording and will attempt to match this voice with the stored signal.</p>
+
+	<hr>
+	<h3 id="Imgbase"><b> Image based</b></h3>
+	<p>There has been a lot of work done on using pictures for authentication rather than text based passwords. There have been many different attempts at using images but there are two main methodologies followed</p>
+
+	<h4 id="Imgsel"><b>Image selection</b></h4>
+	<p>The method of image selection relies on the user having selected an image, or a series of images, and they must select this image from a group of possible options. Some set ups have the user select a rule to select an image by such as 'select the dog', or some similar rule. This methodolgy has had issues with certain options such as how many images to show at a time, what kinds of devices are capable of using this system. For example it can be difficult to display a large number of images on a smartphone and almost impossible on a smart watch. An example of image based authentication can be seen below.</p>
 	<img src="Images/Image-Based_Authentication.jpg" alt="Image based Authentication" style="width:510px;height:447px;">
-	</div>
 
-<h4 id="Imgpoint"><u><b>Point selection</b></u></h4>
-	<div class="well">
-		<p>Another method of using images is to have a single fixed image and have the user select a couple of points on the image to act as a code. So when a user attempts to login they are presented the image and select their points in the order they set previously. One of the common issues with this system is that people tend to pick the same spots on an image favouring prominant features such as towers or street signs.</p>
-	</div>
-	</div>
 
-<h3 id="Patrnbase"><u><b> Pattern based</b></u></h3>
-	<div class="well">
-		<p>A popular method of authentication is the use of pattern based authentication. These patterns can be used in multiple techiques however, like image based authentication, there are two particularly common approaches to using this techology.</p>
+	<h4 id="Imgpoint"><b>Point selection</b></h4>
+	<p>Another method of using images is to have a single fixed image and have the user select a couple of points on the image to act as a code. So when a user attempts to login they are presented the image and select their points in the order they set previously. One of the common issues with this system is that people tend to pick the same spots on an image favouring prominant features such as towers or street signs.</p>
 
-<h4 id="Sketch"><u><b> Sketch based</b></u></h4>
-	<div class="well">
-		<p>Sketch based authentication does not refer to actually drawing anything, that is doodle based which is the following section. Sketch based authentication refers to drawing a pattern to release a device. It is particularly common on android devices and is characterised by nine dots.</br>
-<img src="Images/Android_unlock.png" alt="Android pattern unlock" style="width:450px;height:447px;"></br>
-However this type of input has shown to be rather insecure as the pattern can be revealed by an act as simple as tilting it the see the finger marks on the screens.</br>
-<img src="Images/Fingermarks.jpg" alt="Android finger marks" style="width:450px;height:447px;"></br></p>
-	</div>
+	<hr>
+	<h3 id="Patrnbase"><b> Pattern based</b></h3>
 
-<h4 id="Doodle"><u><b> Doodle based</b></u></h4>
-	<div class="well">
-		<p>Doodle based authentication is where a user draws a pattern, shape or image to unlock their device. Different versions of this kind of authentication use different rules. Some have squares and the aspect that matters is what order the squares are crossed in.</br> <img src="Images/Sketch_based.png" alt="Doodle authentication image" style="width:450px;height:447px;"></br>
-There are other versions that require a user to sketch an image which is saved to the device and the user needs to redraw the image each time they wish to unlock the device.
-</p>
-	</div>
-	</div>
+	<p>A popular method of authentication is the use of pattern based authentication. These patterns can be used in multiple techiques however, like image based authentication, there are two particularly common approaches to using this techology.</p>
 
-<h3 id="Hndwrit"><u><b> Handwritting based</b></u></h3>
-	<div class="well">
-		<p>Another method of authentication is to use hand writting recognition. There are a couple of methods to this approach. One of these methods is to write a certain phrase when you wish to unlock your device. This writting will be compared to a version you gave the device when you set it up and if they are found to match then the devie is unlocked. Another way is similar to how <a href="#Imgsel">image selection</a> works. That is you will be shown a message written in a number of different styles and you need to select the one written in your hand writing. An example can be seen below</br>
-<img src="Images/Handwritten.png" alt="Select handwritting" style="width:450px;height:447px;"></p>
+	<h4 id="Sketch"><b> Sketch based</b></h4>
+	<p>Sketch based authentication does not refer to actually drawing anything, that is doodle based which is the following section. Sketch based authentication refers to drawing a pattern to release a device. It is particularly common on android devices and is characterised by nine dots.</br>
+		<img src="Images/Android_unlock.png" alt="Android pattern unlock" style="width:450px;height:447px;"></br>
+		However this type of input has shown to be rather insecure as the pattern can be revealed by an act as simple as tilting it the see the finger marks on the screens.</br>
+		<img src="Images/Fingermarks.jpg" alt="Android finger marks" style="width:450px;height:447px;"></br>
+	</p>
 
-		<!-- /container -->
+	<h4 id="Doodle"><b> Doodle based</b></h4>
+	<p>Doodle based authentication is where a user draws a pattern, shape or image to unlock their device. Different versions of this kind of authentication use different rules. Some have squares and the aspect that matters is what order the squares are crossed in.</br> <img src="Images/Sketch_based.png" alt="Doodle authentication image" style="width:450px;height:447px;"></br>
+		There are other versions that require a user to sketch an image which is saved to the device and the user needs to redraw the image each time they wish to unlock the device.
+	</p>
+	<hr>
+	<h3 id="Hndwrit"><b> Handwritting based</b></h3>
 
-		<!-- Bootstrap core JavaScript
+	<p>Another method of authentication is to use hand writting recognition. There are a couple of methods to this approach. One of these methods is to write a certain phrase when you wish to unlock your device. This writting will be compared to a version you gave the device when you set it up and if they are found to match then the devie is unlocked. Another way is similar to how <a href="#Imgsel">image selection</a> works. That is you will be shown a message written in a number of different styles and you need to select the one written in your hand writing. An example can be seen below</br>
+		<img src="Images/Handwritten.png" alt="Select handwritting" style="width:450px;height:447px;"></p>
+
+	<!-- /container -->
+
+	<!-- Bootstrap core JavaScript
     ================================================== -->
-		<!-- Placed at the end of the document so the pages load faster -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script>
-			window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
-		</script>
-		<script src="bootstrap/js/bootstrap.min.js"></script>
-		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-		<script src="bootstrap/js/ie10-viewport-bug-workaround.js"></script>
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+		window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+	</script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="bootstrap/js/ie10-viewport-bug-workaround.js"></script>
 </body>
 
 </html>
