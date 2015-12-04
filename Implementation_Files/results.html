@@ -42,25 +42,26 @@
 		<div class="jumbotron">
 
 			<h1 class="text-center">Your password strength results</h1>
+			<div class="text-center">
+				<a class="btn btn-lg btn-success" href="information.html#Guessability">Guessability</a>
+			</div>
 			<div class="row">
-				<div class="col-lg-10 col-lg-offset-1">
-					<canvas id="canvas" style="margin-left:-20px"></canvas>
+				<div class="col"><a class="btn btn-lg btn-success" href="information.html#Recordability">Recordability</a></div>
+				<div class="col">
+					<canvas id="canvas" style=""></canvas><a class="btn btn-lg btn-success" href="information.html#Observability">Observability</a>
 				</div>
+				<div class="col"></div>
+			</div>
+			<div class="text-center">
+				<a class="btn btn-lg btn-success" href="information.html#Memorability">Memorability</a>
 			</div>
 			<br>
-			<p>Learn more about the things here:</p>
-			<div class="row text-center">
-				<div class="col-sm-3"><a class="btn btn-lg btn-success" href="information.html#Observability">Observability</a></div>
-				<div class="col-sm-3"><a class="btn btn-lg btn-success" href="information.html#Guessability">Guessability</a></div>
-				<div class="col-sm-3"><a class="btn btn-lg btn-success" href="information.html#Recordability">Recordability</a></div>
-				<div class="col-sm-3"><a class="btn btn-lg btn-success" href="information.html#Memorability">Memorability</a></div>
-			</div>
 
 		</div>
 		<!-- /container -->
 		<script>
 			var radarChartData = {
-				labels: ["Guessability", "Observability", "Memorability", "Recordability"],
+				labels: ["", "Observability", "", "Recordability"],
 				datasets: [
 
 					{
